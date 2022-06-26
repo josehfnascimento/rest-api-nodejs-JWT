@@ -8,4 +8,9 @@ userRouter.post("/", (req, res) => {
         return createUserController.handle(req, res);
 });
 
+userRouter.get("/", (req, res) => {
+        const createUserController = new CreateUserController();
+        return createUserController.index(req, res);
+});
+
 export default userRouter;
