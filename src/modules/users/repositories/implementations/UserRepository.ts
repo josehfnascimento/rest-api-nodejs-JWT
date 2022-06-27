@@ -1,6 +1,6 @@
 import { Repository } from "typeorm";
 import { AppDataSource } from "../../../../database/index"
-import User from "../../../../models/User";
+import User from "../../../../models/Users";
 import {
     IUserRepository, IUserRepositoryDTO,
 } from "../IUserRepository";
@@ -15,11 +15,11 @@ class UserRepository implements IUserRepository {
     async findOne(
         where: { [key: string]: string | number },
     ): Promise<User | null> {
-        const Video = await this.userRepository.findOne({
+        const user = await this.userRepository.findOne({
             where,
         });
 
-        return Video;
+        return user;
     }
 
     async create(user: IUserRepositoryDTO): Promise<User> {

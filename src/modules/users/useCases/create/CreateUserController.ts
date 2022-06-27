@@ -5,9 +5,6 @@ import * as Yup from "yup";
 import { CreateUserUseCase } from "./CreateUserUseCase";
 
 class CreateUserController {
-    async index(request: Request, response: Response) {
-        return response.send({ userId: request.userId });
-    }
     async handle(request: Request, response: Response): Promise<Response> {
         const createUserUseCase = container.resolve(CreateUserUseCase);
         try {
