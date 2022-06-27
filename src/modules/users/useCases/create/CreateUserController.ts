@@ -19,7 +19,7 @@ class CreateUserController {
                     .email("Preencha um email válido!"),
                 password: Yup.string().required("A senha é obrigatória!")
                     .min(6, "A senha precisa ter no mínimo 6 caracteres.")
-                    .max(50, "A senha precisa ter no máximo 100 caracteres."),
+                    .max(50, "A senha precisa ter no máximo 50 caracteres."),
             });
 
             await schema.validate(data);

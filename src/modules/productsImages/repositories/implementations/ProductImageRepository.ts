@@ -52,10 +52,8 @@ class ProductImageRepository implements IProductImageRepository {
         const imagens = await this.productImageRepository.find({
             where: { id_product },
         });
-        console.log(imagens);
         imagens.forEach(async (image) => {
             await awsService.deleteFile(image.dsc_path);
-            console.log(image.dsc_path);
         });
 
         await this.productImageRepository.delete({ id_product });
