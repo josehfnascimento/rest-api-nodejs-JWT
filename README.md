@@ -22,6 +22,7 @@ usuário deve ser vinculado a ele.`
 - Yup - Para validação de dados
 - PostgreSQL - Banco de dados
 - TypeORM - ORM
+- AWS S3 - Para salvar as imagens
 ## 🛡️ Instalação & Configuração
  
 #### 1 - É necessário clonar o repositório com o comando `git clone https://github.com/zehenrique0822/rest-api-nodejs-JWT.git`
