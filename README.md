@@ -1,6 +1,6 @@
 # API REST com Autenticação JWT
  
- `O projeto constite em uma api em que o usuário pode se cadastrar na aplicação informando seu
+ `O projeto consiste em uma api em que o usuário pode se cadastrar na aplicação informando seu
 nome, email e senha e possa logar usando apenas email e senha.
 O usuário logado poderá cadastrar produtos informando obrigatoriamente seu nome,
 descrição e preço, ele também poderá listar e deletar estes produtos. Além disso, o
