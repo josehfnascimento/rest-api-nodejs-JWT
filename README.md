@@ -22,7 +22,7 @@ usuário deve ser vinculado a ele.`
 - Yup - Para validação de dados
 - PostgreSQL - Banco de dados
 - TypeORM - ORM
-## Instalação & Configuração
+## 🛡️ Instalação & Configuração
  
 #### 1 - É necessário clonar o repositório com o comando `git clone https://github.com/zehenrique0822/rest-api-nodejs-JWT.git`
 #### 2 - Acessar o diretório do projeto e instalar as dependencias com o comando `yarn`
@@ -36,14 +36,14 @@ usuário deve ser vinculado a ele.`
     password: "1234",`
  #### OBS: Typeorm passou por mudanças recentes e não consegui localizar ainda a forma correta de utilizar o .env neste arquivo.
 
-## Para executar o projeto
+## 📋 Para executar o projeto
 
 Execute `yarn dev` e aguarde até a mensagem de sucesso ( Imagem abaixo ) para iniciar a API, a porta padrão é 3000, então para requisições será `http://localhost:3000/`
 
 ![image](https://user-images.githubusercontent.com/89668742/175925115-b5d00c6a-f0b4-4c6c-82b6-3aeb8548622e.png)
 
 
-## Endpoints:
+## 📌 Endpoints:
 
 A seguir está um exemplo para requisições nos endpoints criados:
 
@@ -110,8 +110,11 @@ Em caso de sucesso retorna a seguinte mensagem `"status": "Produto excluído."`
 
 `Obrigatório enviar no header o token de autorização que é do tipo Bearer Token, este token é retonado na autenticação`
 
-## Testes:
+## ⚙️ Testes:
 
 Foram totalmente realizados no ambiente automatizado do Postman, onde foi criado uma collection com 6 testes, comprovando o sucesso de cada funcionalidade. Os testes que foram feitos nesse caso podem ser vistos na figura abaixo, logo na aba a esquerda. O Postman é uma ferramenta extremamente útil para se testar manualmente ou automatizar os testes de qualquer API REST.
 
 ![image](https://user-images.githubusercontent.com/89668742/175929630-8f972a3d-01a2-4996-bdd9-0c6c98cdfa31.png)
+
+
+#### Desenvolvido por José Henrique. 
