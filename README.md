@@ -35,7 +35,9 @@ usuário deve ser vinculado a ele.`
     username: "postgres",
     database: "tsauth",
     password: "1234",`
+ #### 5 - Executar as migrations com seguinte comando `yarn typeorm -- migration:run -d src/database/index.ts`
  #### OBS: Typeorm passou por mudanças recentes e não consegui localizar ainda a forma correta de utilizar o .env neste arquivo.
+ 
 
 ## 📋 Para executar o projeto
 
