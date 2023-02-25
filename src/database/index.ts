@@ -2,10 +2,10 @@ import { DataSource } from "typeorm"
 
 export const AppDataSource = new DataSource({
     type: "postgres",
-    host: "localhost",
+    host: "db",
     port: 5432,
     username: "postgres",
-    database: "tsauth",
+    database: "postgresProducts",
     password: "1234",
     synchronize: false,
     entities: [
@@ -20,6 +20,6 @@ AppDataSource.initialize()
     .then(() => {
         console.log("📦 Successfully connected with database!")
     })
-    .catch((err) => {
+    .catch((err: any) => {
         console.error("❌ Error during Data Source initialization", err)
     })

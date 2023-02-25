@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  cli:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    user: '1000'
+    command: bash
+    volumes:
+      - ./:/usr/src/app
+      - ~/.gitconfig/:/root/.gitconfig
+    working_dir: /usr/src/app

@@ -1,0 +1,25 @@
+version: '3.9'
+
+services:  
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgresProducts
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data:/data/postgres
+  api:
+      container_name: apiProducts
+      build: .
+      command: yarn dev
+      env_file: .env
+      ports:
+        - "3000:3000"
+      volumes:
+        - .:/usr/src/app
+      depends_on:
+        - db      
