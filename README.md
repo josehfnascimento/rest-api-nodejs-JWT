@@ -41,9 +41,28 @@ usuário deve ser vinculado a ele.`
 
 ## 📋 Para executar o projeto
 
-Execute `yarn dev` e aguarde até a mensagem de sucesso ( Imagem abaixo ) para iniciar a API, a porta padrão é 3000, então para requisições será `http://localhost:3000/`
+### Instalar Dependências
+```bash
+# Install dependencies
+docker-compose run --rm api yarn
+# or: docker-compose run --rm api npm install
+```
+### Iniciar API
+```bash
+# Start the api
+docker-compose up
+# Then open http://localhost:4000
+```
 
 ![image](https://user-images.githubusercontent.com/89668742/175925115-b5d00c6a-f0b4-4c6c-82b6-3aeb8548622e.png)
+
+### Migrations
+- Run migrations
+```bash
+# API must be running
+yarn docker:migration:run
+# or: npm run yarn docker:migration:run
+```
 
 
 ## 📌 Endpoints:
